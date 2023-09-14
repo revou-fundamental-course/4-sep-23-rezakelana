@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Katik</title>
+</head>
+<body>
+    <header>
+    <div class="container">
+        <h1>Katik (Kalkulator Matematik) </h1>
+    </header>
+    
+        <h2>Welcome to Katik</h2>
+        <p>Katik merupakans ebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+
+    <!-- Luas Persegi -->
+    <div class="shape-container" id="Luas">
+        <h1>Luas Persegi</h1>
+        <img src="images/persegi.jpg" alt="Gambar Persegi">
+        <p>Rumus Luas Persegi yaitu:
+            <br>L= S X S
+            <br>Di mana:
+            <br>L= Luas
+            <br>S= Sisi
+        </p>
+
+        <form id="Luas">
+            <h1>Hitung Luas Persegi</h1>
+            <input type="number" id="sideLengthLuas" name="sideLengthLuas"  placeholder="Masukkan Nilai Sisi" required>
+            <br>
+            <button type="submit" id="calculateButtonLuas">Hitung</button>
+            <br>
+            <button type="button" id="resetButtonLuas">Reset</button>
+        </form>
+
+        <div id="resultContainerLuas">
+            <p>Luas: <span id="areaResultLuas"></span></p>
+        </div>
+    </div>
+
+    <!-- Keliling Persegi -->
+    <div class="shape-container" id="Keliling">
+        <h1>Keliling Persegi</h1>
+        <img src="images/persegi.jpg" alt="Gambar Persegi">
+        <div class="keliling">
+            <p>Rumus Keliling Persegi yaitu:
+                <br>K= 4 X S
+                <br>Di mana:
+                <br>K= Keliling
+                <br>S= Sisi
+            </p>
+        </div>
+        
+
+        <form id="Keliling">
+            <h1>Hitung Keliling Persegi</h1>
+            <input type="number" id="sideLengthKeliling" name="sideLengthKeliling" placeholder="Masukkan Nilai Sisi" required>
+            <br>
+            <button type="submit" id="calculateButtonKeliling">Hitung</button>
+            <br>
+            <button type="button" id="resetButtonKeliling">Reset</button>
+        </form>
+
+        <div id="resultContainerKeliling">
+            <p>Keliling: <span id="perimeterResultKeliling"></span></p>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script src="js/script.js"></script>
+
+   
+
+</body>
+</html>
